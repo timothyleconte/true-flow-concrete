@@ -1,19 +1,84 @@
 body {
     font-family: sans-serif, Times, system-ui;
+    background: #de9102;
+    background: linear-gradient(175deg,rgba(222, 145, 2, 1) 0%, rgba(224, 173, 96, 1) 50%, rgba(217, 201, 169, 1) 100%);
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 800px;
+    
 }
 
 .header{
     text-align: center;
-    border: solid 1px black;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 0 10px 30px 10px;
+    color: white;
+    flex-shrink: 1;
+}
+
+.logo{
+    border-radius: 50%;
+    border: solid darkgray 10px;
+    overflow: hidden;
+    background-color: black;
+    z-index: 1;
+    margin-top: -30px;
+    flex-shrink: 1;
+
 }
 
 .body{
     text-align: center;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 35px 35px 25px 35px;
+    margin-top: -30px;
+    flex-shrink: 1;
+}
+
+img{
+    width: auto;
+    height: 200px;
+}
+
+button{
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: gray;
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 0.2),
+    rgb(0 0 0 / 0.2) 30%,
+    rgb(0 0 0 / 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+button:hover {
+  background-color: orange;
+}
+
+button:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 0.6),
+    inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+
+.contactEmail{
+    margin: 25px 0 25px 0;
+
 }
