@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif, Times, system-ui;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+    border: solid 1px black;
+}
+
+.body{
+    text-align: center;
+}
